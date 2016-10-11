@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/style.css" type="text/css" rel="stylesheet">
+    <title>Стартовая анкета</title>
+</head>
+<body>
+<form action="/stats">
+    <div class="main_q">
+        <p><b>Для начала введите персональные данные:</b><br></p>
+        <div class="low_q">
+    <label><b>Введите ваше имя: </b><input type="text" name="namae"> </label><br>
+    <label><b>В каком городе прожили основную часть вашей жизни: </b><input type="text" name="machi"> </label><br>
+            <label><b>Скалько вам лет: </b><input type="text" name="old"> </label><br>
+            <b>Выберете пол: </b><br>
+            <label>Женский<input type="radio" name="gend" value="Женский"></label><br>
+            <label>Мужской<input type="radio" name="gend" value="Мужской"></label><br>
+        </div>
+        <p><b>Далее Вам на выбор будет представлено несколько слов в которых проставлены ударения.<br>
+        Выберете  тот вариант, который вы чаще всего употребляете.<br>
+            Опираться на принятую норму орфоэпии не нужно.</b></p><br>
+
+        <div class="low_q">
+            <div class="text">
+    <p><b>Вопрос первый:</b></p>
+            <label>ГЕнезис<input type="radio" name="q1" value="ГЕнезис"></label><br>
+    <label>ГенЕзис<input type="radio" name="q1" value="ГенЕзис"></label><br>
+    <label>ГенезИс<input type="radio" name="q1" value="ГенезИс"></label><br>
+        <p><b>Вопрос второй:</b></p>
+    <label>МАркетинг<input type="radio" name="q2" value="МаркетИнг"></label><br>
+    <label>МаркЕтинг<input type="radio" name="q2" value="МаркЕтинг"></label><br>
+    <label>МаркетИнг<input type="radio" name="q2" value="МАркетинг"></label><br>
+        <p><b>Вопрос третий:</b></p>
+    <label>Ягодицы<input type="radio" name="q3" value="Ягодицы"></label><br>
+    <label>ягОдицы<input type="radio" name="q3" value="ягОдицы"></label><br>
+    <label>ягодИцы<input type="radio" name="q3" value="ягодИцы"></label><br>
+        <p><b>Вопрос четвертый:</b></p>
+    <label>заржАветь<input type="radio" name="q4" value="заржАветь"></label><br>
+    <label>заржавЕть<input type="radio" name="q4" value="заржавЕть"></label><br>
+        <p><b>Вопрос пятый:</b></p>
+    <label>сОгнутый<input type="radio" name="q5" value="сОгнутый"></label><br>
+    <label>согнУтый<input type="radio" name="q5" value="согнУтый"></label><br>
+        <p><b>Вопрос шестой:</b></p>
+    <label>судЕйы<input type="radio" name="q6" value="судЕй"></label><br>
+    <label>сУдей<input type="radio" name="q6" value="сУдей"></label><br>
+        <p><b>Вопрос седьмой:</b></p>
+    <label>квАртал<input type="radio" name="q7" value="квАртал"></label><br>
+    <label>квартАл<input type="radio" name="q7" value="квартАл"></label><br>
+    <p><b>Поле для комментария(не обязательно для заполнения): <br></b><textarea rows="10" cols="45" name="comment"></textarea></p>
+    <input type="submit" value="Отправить">
+                </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="/static/style.css" type="text/css" rel="stylesheet">
+    <title>Образ Json</title>
+</head>
+<body>
+    <div class="low2_q">
+        <div class="text">
+            <h1>Вот, что накопилось в json за эту сессию:</h1>
+            <p>{{ data }}</p>
+            {% for name, url in urls.items() %}
+            <a href="{{ url }}">{{ name }}</a>
+            {% endfor %}
+    </div>
+    </div>
+</body>
+</html>

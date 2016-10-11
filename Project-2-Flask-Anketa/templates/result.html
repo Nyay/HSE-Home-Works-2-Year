@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="/static/style.css" type="text/css" rel="stylesheet">
+    <title>Результаты поиска</title>
+</head>
+<body>
+    <div class="low2_q">
+        <div class="text">
+{% for el in block %}
+<p>
+    Имя информанта: {{ el[0] }}<br>
+    Город проживания: {{ el[1] }}<br>
+    Возраст: {{ el[2] }}<br>
+    Пол: {{ el[3] }}<br>
+    Ответ на вопрос 1 : {{ el[4] }}<br>
+    Ответ на вопрос 2 : {{ el[5] }}<br>
+    Ответ на вопрос 3 : {{ el[6] }}<br>
+    Ответ на вопрос 4 : {{ el[7] }}<br>
+    Ответ на вопрос 5 : {{ el[8] }}<br>
+    Ответ на вопрос 6 : {{ el[9] }}<br>
+    Ответ на вопрос 7 : {{ el[10] }}<br>
+</p>
+{% endfor %}
+            {% for name, url in urls.items() %}
+            <a href="{{ url }}">{{ name }}</a>
+            {% endfor %}
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/style.css" type="text/css" rel="stylesheet">
+    <title>Статистика</title>
+</head>
+<body>
+        <div class="low2_q">
+            <div class="text">
+<h1>Спасибо за ответ, {{ namae }}!</h1>
+<p>Мы записали ваш ответ</p>
+<p>Имя информанта: {{ namae }}</p>
+<p>Город проживания: {{ machi }}</p>
+<p>Ответ на вопрос 1: {{ q1 }}</p>
+<p>Ответ на вопрос 2: {{ q2 }}</p>
+<p>Ответ на вопрос 3: {{ q3 }}</p>
+<p>Ответ на вопрос 4: {{ q4 }}</p>
+<p>Ответ на вопрос 5: {{ q5 }}</p>
+<p>Ответ на вопрос 5: {{ q6 }}</p>
+<p>Ответ на вопрос 5: {{ q7 }}</p>
+<p>Отклонений от нормы орфоэпии: {{ i }}</p>
+<img src="../static/tumblr_njfbgxcj2s1tvfwdpo1_500.gif"/><br>
+    {% for name, url in urls.items() %}
+    <a href="{{ url }}">{{ name }}</a>
+    {% endfor %}
+    </div>
+</div>
+</body>
+</html>

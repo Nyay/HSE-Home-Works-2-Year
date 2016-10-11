@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="/static/style.css" type="text/css" rel="stylesheet">
+    <title>Страница поиска</title>
+</head>
+<body>
+<form action="/result">
+        <div class="low2_q">
+        <div class="text">
+            <label> <input type="radio" name="argg" value="find_name"><input type="text" name="argg_name">Поиск по имени:</label><br>
+            <label><input type="radio" name="argg" value="Женский">Показать ответы информантов женского рода.</label><br>
+            <label><input type="radio" name="argg" value="Мужской">Показать ответы информантов мужского рода</label><br>
+            <input type="submit" value="Поиск">
+            {% for name, url in urls.items() %}
+            <a href="{{ url }}">{{ name }}</a>
+            {% endfor %}
+        </div>
+        </div>
+</form>
+</body>
+</html>
