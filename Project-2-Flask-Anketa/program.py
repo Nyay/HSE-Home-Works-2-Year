@@ -111,4 +111,4 @@ def result():
 
 if __name__ == '__main__':
     t = file_creator()
-    app.run(debug=True)
+    app.run()
