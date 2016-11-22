@@ -51,7 +51,6 @@ def stats():
         urls = {'Пройти опрос еще раз': url_for('main_page'),
                 'Вернуть Json файл': url_for('come_back_json'),
                 'Начать поиск по пройденым анкетам': url_for('search'), }
-
         return render_template('stats.html',comment=comment, namae=namae, machi=machi, old=old, gend = gend, q1=q1, q2=q2, q3=q3, q4=q4, q5=q5, q6=q6, q7=q7, i=i, urls=urls)
 
 @app.route('/json')
