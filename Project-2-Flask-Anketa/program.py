@@ -6,7 +6,7 @@ from flask import url_for, render_template, request
 app = Flask(__name__)
 
 def file_creator():
-    file = open('/Users/macbook/Desktop/HSE void/Flask prog/project_AGAIN/stats.txt', 'w', encoding='UTF-8')
+    file = open('stats.txt', 'w', encoding='UTF-8')
     title = 'Namae' + '\t' + 'Machi' + '\t' + 'Shitsumon_1' + '\t' + 'Shitsumon_2' + '\t' + 'Shitsumon_3' + '\t' + 'Shitsumon_4' + '\t' + 'Shitsumon_5' + '\t' + 'Shitsumon_6' + '\t' + 'Shitsumon_7' + '\n'
     file.write(title)
     file.close()
@@ -18,6 +18,7 @@ def main_page():
 @app.route('/stats')
 def stats():
     i = 0
+    comment = request.args['comment']
     if request.args:
         namae = request.args['namae']
         machi = request.args['machi']
@@ -30,7 +31,9 @@ def stats():
         q5 = request.args['q5']
         q6 = request.args['q6']
         q7 = request.args['q7']
-        file = open ('/Users/macbook/Desktop/HSE void/Flask prog/project_AGAIN/stats.txt', 'a', encoding='UTF-8')
+        file = open ('stats.txt', 'a', encoding='UTF-8')
+        file_com = open('comments.txt', 'a', encoding='UTF-8')
+        file_com.write(comment + '\n')
         file.write( namae + '\t' + machi + '\t' + old + '\t' + gend + '\t' + q1 + '\t' + q2 + '\t' + q3 + '\t' + q4 + '\t' + q5 + '\t' + q6 + '\t' + q7 + '\n')
         if q1 != 'ГЕнезис':
             i += 1
@@ -49,7 +52,7 @@ def stats():
                 'Вернуть Json файл': url_for('come_back_json'),
                 'Начать поиск по пройденым анкетам': url_for('search'), }
 
-        return render_template('stats.html', namae=namae, machi=machi, old=old, gend = gend, q1=q1, q2=q2, q3=q3, q4=q4, q5=q5, q6=q6, q7=q7, i=i, urls=urls)
+        return render_template('stats.html',comment=comment, namae=namae, machi=machi, old=old, gend = gend, q1=q1, q2=q2, q3=q3, q4=q4, q5=q5, q6=q6, q7=q7, i=i, urls=urls)
 
 @app.route('/json')
 def come_back_json():
@@ -107,5 +110,5 @@ def result():
     return render_template('result.html', argg=argg, argg_name=argg_name, block=block, urls=urls)
 
 if __name__ == '__main__':
-    #t = file_creator()
+    t = file_creator()
     app.run(debug=True)
