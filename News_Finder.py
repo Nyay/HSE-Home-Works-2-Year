@@ -17,10 +17,8 @@ def get_links(html_code):
     try:
         result = re.findall ('<a\nhref="(.+?)"\nclass="j-metrics__clicks-out-source-subject article-sources__subject"', html_code)
         link_list = result
-        #link_list = '\n'.join(result)
     except:
         link_list = ' No Links Found '
-    #print(link_list)
     return link_list
 
 def get_text(link_list):
