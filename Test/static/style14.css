@@ -1,0 +1,38 @@
+
+body {
+    font-family: Verdana;
+    font-size: large;
+    background-image: url("Backgrounds_On_blue_background_wallpaper_082199_.jpg");
+            }
+.main_q {
+    margin: 40px;
+         }
+.low_q{
+    background-color: whitesmoke;
+    border-radius:6px;
+    opacity: 0.8;
+    border: 2px solid black;
+         }
+.low2_q{
+    background-color: whitesmoke;
+    border-radius:6px;
+    opacity: 0.8;
+    border: 2px solid black;
+    margin: 40px;
+         }
+.text{
+    margin: 10px;
+         }
+
+a:link, a:visited {
+    background-color: #727172;
+    color: white;
+    border: 1px solid black;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: #5c5b5c;
+}
