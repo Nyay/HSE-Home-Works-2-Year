@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link href="/static/style_sql.css" type="text/css" rel="stylesheet">
+    <title>Страница результата</title>
+</head>
+<body>
+    <div class="main_q">
+        <div class="low_q">
+            <p><b>Ваш код для создания таблицы в DB Browser создан.</b><br></p>
+        </div>
+    </div>
+{% for name, url in urls.items() %}
+<a href="{{ url }}">{{ name }}</a>
+{% endfor %}
+</form>
+</body>
+</html>
