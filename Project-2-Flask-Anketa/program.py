@@ -1,4 +1,3 @@
-
 import json
 from flask import Flask
 from flask import url_for, render_template, request
@@ -56,7 +55,7 @@ def stats():
 @app.route('/json')
 def come_back_json():
     d = dict(Namae = [], Machi = [], old=[], gend = [], Shitsumon_1 = [], Shitsumon_2 = [], Shitsumon_3 = [], Shitsumon_4 = [], Shitsumon_5 = [], Shitsumon_6 = [], Shitsumon_7 = [])
-    file_for_json = open('/Users/macbook/Desktop/HSE void/Flask prog/project_AGAIN/stats.txt', 'r', encoding='UTF-8')
+    file_for_json = open('stats.txt', 'r', encoding='UTF-8')
     for line in file_for_json:
         if 'Namae' in line:
             continue
