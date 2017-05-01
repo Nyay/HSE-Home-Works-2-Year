@@ -1,6 +1,5 @@
 import requests
 import re
-import collections
 import matplotlib.pyplot as plt
 
 
@@ -37,7 +36,6 @@ def graf_plot(dictp):
     block_1 = sorted(block_1)
     for el in block_1:
         block_2.append(dictp[el])
-    print(block_1, block_2)
     plt.plot(block_1, block_2)
     plt.show()
     plt.close()
@@ -51,16 +49,12 @@ def graf(dictio, titles, ylabels, xtick):
     plt.ylabel(str(ylabels))
     plt.xlabel(str(xtick))
     plt.xticks(range(len(some_labs)), some_labs, rotation=90)
-    plt.legend()
     plt.rcParams.update({'font.size': 1})
     plt.show()
     plt.close()
 
 
 def collector():
-    item = []
-    num_hi = []
-    num_low = []
     years = {}
     dicti_2 = {}
     towns = {}
@@ -130,8 +124,6 @@ def collector():
                         except KeyError:
                             continue
                 dicti_2[num_1] = num_2
-                num_hi.append(num_1)
-                num_low.append(num_2)
     for el in years:
         years[el] = sum(years[el]) // len(years[el])
     graf(years, 'Соотношение возраст/кол-во слов в комментарии', 'Количество слов для каждого года', 'Год рождения пользователя')
@@ -145,6 +137,6 @@ def collector():
     for el in towns:
         towns[el] = sum(towns[el]) // len(towns[el])
     graf(towns, 'Среднее количество слов в комментарии для каждого города', 'Среднее количество слов', 'Город проживания позльзователя')
-    return item
+    return 'Done!'
 
 collector()
