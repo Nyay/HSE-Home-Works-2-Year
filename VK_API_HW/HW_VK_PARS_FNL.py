@@ -44,8 +44,6 @@ def graf_plot(dictp):
 
 
 def graf(dictio, titles, ylabels, xtick):
-    for el in dictio:
-        dictio[el] = sum(dictio[el]) // len(dictio[el])
     some_nums = [dictio[something] for something in dictio]
     some_labs = [something for something in dictio]
     plt.bar(range(len(some_labs)), some_nums)
@@ -81,7 +79,7 @@ def collector():
             if result[x]['text'] != '':
                 num_1 = count(cleaner(result[x]['text']))
                 one_id = result[x]['id']
-                file_to_write.write('\n\n\tID поста: ' + str(one_id) + '\n\n\tТестк поста: \n\n' + cleaner(result[x]['text']) + '\n\n Комментарии:\n')
+                file_to_write.write('\n\n\tID поста: ' + str(one_id) + '\n\n\tТестк поста: \n\n' + cleaner(result[x]['text']) + '\n\n\tКомментарии:\n')
                 link2 = 'https://api.vk.com/method/wall.getComments'
                 parameters_comments = {'version': '5.62',
                                        'owner_id': '-256132',
@@ -134,6 +132,8 @@ def collector():
                 dicti_2[num_1] = num_2
                 num_hi.append(num_1)
                 num_low.append(num_2)
+    for el in years:
+        years[el] = sum(years[el]) // len(years[el])
     graf(years, 'Соотношение возраст/кол-во слов в комментарии', 'Количество слов для каждого года', 'Год рождения пользователя')
     for el in dicti_2:
         try:
