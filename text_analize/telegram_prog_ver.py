@@ -2,7 +2,7 @@ import telebot
 import time
 import mystem_bot_module
 
-TOKEN = '394088870:AAGfFZ0XCgmztov0jAYxnxojLyD-cWrNaq4'
+TOKEN = ''
 
 bot = telebot.TeleBot(TOKEN)
 bot.remove_webhook()

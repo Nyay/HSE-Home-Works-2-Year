@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37fd42b5-966c-4eb9-a4ee-feda1d05bd85" name="Default" comment="Контрольная работа 12 дек." />
+    <list default="true" id="37fd42b5-966c-4eb9-a4ee-feda1d05bd85" name="Default" comment="Контрольная работа 12 дек.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/text_analize/telegram_prog_ver.py" afterPath="$PROJECT_DIR$/text_analize/telegram_prog_ver.py" />
+    </list>
     <list id="0f6bc4ad-9c7c-405c-9a0b-50166f5b950b" name="New changelist" comment="" />
     <ignored path="HSE-Home-Works-2-Year.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +21,7 @@
     <SUITE FILE_PATH="coverage/HSE-Home-Works-2-Year$file_test2.coverage" NAME="file_test2 Coverage Results" MODIFIED="1481543835019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/HSE-Home-Works-2-Year$code_creator_web.coverage" NAME="code_creator_web Coverage Results" MODIFIED="1482141285355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql_hw" />
     <SUITE FILE_PATH="coverage/HSE-Home-Works-2-Year$code_creator.coverage" NAME="code_creator Coverage Results" MODIFIED="1482136619703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sql_hw" />
-    <SUITE FILE_PATH="coverage/HSE-Home-Works-2-Year$Telegram_bot_comp.coverage" NAME="Telegram_bot_comp Coverage Results" MODIFIED="1496431185339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_analize" />
+    <SUITE FILE_PATH="coverage/HSE-Home-Works-2-Year$Telegram_bot_comp.coverage" NAME="Telegram_bot_comp Coverage Results" MODIFIED="1496432729042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_analize" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -57,8 +59,8 @@
       <file leaf-file-name="telegram_prog_ver.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/text_analize/telegram_prog_ver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="64">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -1012,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/text_analize/telegram_prog_ver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="64">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
